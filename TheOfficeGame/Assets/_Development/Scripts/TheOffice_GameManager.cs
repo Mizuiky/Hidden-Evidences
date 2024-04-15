@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TheOffice_GameManager : Singleton<TheOffice_GameManager>
@@ -12,7 +10,12 @@ public class TheOffice_GameManager : Singleton<TheOffice_GameManager>
         Init();    
     }
 
-    public void Init()
+    private void Init()
+    {
+        InitPlayer();
+    }
+
+    private void InitPlayer()
     {
         PlayerController player = Instantiate(playerController, PlayerPosition);
         player.Init();
