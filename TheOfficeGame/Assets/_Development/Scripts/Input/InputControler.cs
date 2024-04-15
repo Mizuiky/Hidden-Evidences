@@ -7,8 +7,7 @@ public class InputControler : MonoBehaviour
 {
     private PlayerInputActions _input;
     private IPlayer _player;
-    private Vector3 _moveVector = Vector2.zero;
-    private Vector2 _moveValue;
+    private Vector2 _moveVector = Vector2.zero;
 
     private void Awake()
     {
@@ -31,9 +30,7 @@ public class InputControler : MonoBehaviour
 
     private void OnMovementPerformed(InputAction.CallbackContext value)
     {
-        _moveValue = value.ReadValue<Vector2>();
-        _moveVector = new Vector3(_moveValue.x, _moveValue.y, 0);
-
+        _moveVector = value.ReadValue<Vector2>();
         _player.MovePlayer(true, _moveVector);
     }
 
@@ -47,8 +44,8 @@ public class InputControler : MonoBehaviour
 
     private void OnDisable()
     {
-        _input.Disable();
         _input.Player.Movement.performed -= OnMovementPerformed;
         _input.Player.Movement.canceled -= OnMovementCanceled;
+        _input.Disable();
     }
 }
