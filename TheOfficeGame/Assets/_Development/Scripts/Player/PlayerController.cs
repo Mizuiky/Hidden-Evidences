@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour, IPlayer
     private MovementControler _movementController;
     [SerializeField]
     private InputControler _inputController;
+    [SerializeField]
+    private PlayerAnimation _animation;
 
     private Vector3 _movement;
     private bool _isMoving = false;
@@ -18,18 +20,19 @@ public class PlayerController : MonoBehaviour, IPlayer
     public void Init()
     {
         _isMoving = false;
+        _movementController.Init(_animation);
         _inputController.Init(this);
-    }
-
-    private void Update()
-    {
-        
     }
 
     private void FixedUpdate()
     {
-        if(_isMoving)
-            _movementController.Move(_movement);
+        _animation.SetIsMoving(false);
+
+        if (_isMoving)
+        {
+            _animation.SetIsMoving(true);
+            _movementController.Move(_movement);           
+        }         
     }
 
     public void MovePlayer(bool isMoving, Vector3 movement)
