@@ -52,6 +52,10 @@ MonoBehaviour:
   _movementController: {fileID: 6426622451944131297}
   _inputController: {fileID: 996060168303019742}
   _animation: {fileID: 5334714937976070384}
+  _dectionRadius: 0.4
+  _detectionLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!114 &6426622451944131297
 MonoBehaviour:
   m_ObjectHideFlags: 0

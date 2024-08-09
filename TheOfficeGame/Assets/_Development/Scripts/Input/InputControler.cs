@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -19,6 +17,7 @@ public class InputControler : MonoBehaviour
         _input.Enable();
         _input.Player.Movement.performed += OnMovementPerformed;
         _input.Player.Movement.canceled += OnMovementCanceled;
+        _input.Player.Interact.performed += OnStarDialog;
     }
 
     public void Init(IPlayer player)
@@ -41,6 +40,11 @@ public class InputControler : MonoBehaviour
     }
 
     #endregion
+
+    private void OnStarDialog(InputAction.CallbackContext value)
+    {
+        _player.ActivateInteraction();
+    }
 
     private void OnDisable()
     {
