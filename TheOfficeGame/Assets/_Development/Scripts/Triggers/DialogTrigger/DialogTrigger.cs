@@ -1,46 +1,55 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace JAM.Dialog
+public class DialogTrigger : MonoBehaviour, IDialogTrigger
 {
-    public class DialogTrigger : MonoBehaviour, IDialogTrigger
+    [SerializeField] private int _dialogRoot;
+    [SerializeField] private DialogWritter _writter;
+    [SerializeField] private bool _changeDialog = false;
+    [SerializeField] private int [] nextDialogRoot;
+
+    public UnityEvent onDialogFinished;
+
+    private bool hasDialogFinished = true;
+    public bool HasDialogFinished {  get { return hasDialogFinished; } }
+
+    private int rootCount = 0;
+    public void Start()
     {
-        [SerializeField] private int _dialogRoot;
-        [SerializeField] private DialogWritter _writter;
+        _writter.endDialogEvent.AddListener(OnEndDialog);
+    }
 
-        public UnityEvent onDialogFinished;
+    public virtual void OnStartDialog()
+    {
+        Debug.Log("OnStartDialog");
 
-        private bool hasDialogFinished = true;
-        public bool HasDialogFinished {  get { return hasDialogFinished; } }
-
-        public void Start()
+        if (_dialogRoot != -1)
         {
-            _writter.endDialogEvent.AddListener(OnEndDialog);
-        }
+            Debug.Log("Dialog != -1");
 
-        public virtual void OnStartDialog()
-        {
-            Debug.Log("OnStartDialog");
-
-            if (_dialogRoot != -1)
+            if (hasDialogFinished)
             {
-                Debug.Log("Dialog != -1");
-
-                if (hasDialogFinished)
-                {
-                    Debug.Log("Started dialog");
-                    hasDialogFinished = false;
-                    _writter.StartDialog(_dialogRoot);                 
-                }
+                Debug.Log("Started dialog");
+                hasDialogFinished = false;
+                _writter.StartDialog(_dialogRoot);                 
             }
         }
+    }
 
-        public void OnEndDialog()
-        {
-            if (onDialogFinished != null)
-                onDialogFinished?.Invoke();
+    public void OnEndDialog()
+    {
+        if (onDialogFinished != null)
+            onDialogFinished?.Invoke();
 
-            hasDialogFinished = true;
-        }
+        hasDialogFinished = true;
+        if(_changeDialog)
+        {          
+            if(rootCount < nextDialogRoot.Length)
+            {
+                _dialogRoot = nextDialogRoot[rootCount];
+                rootCount++;
+            }            
+        }           
     }
 }
+

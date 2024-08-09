@@ -48,7 +48,7 @@ public class LocalizationHandler : ScriptableObject
         }
 
         //test
-        GetTranslation("before_boss6");
+        GetTranslation("jin_message4");
     }
 
     public string GetTranslation(string key)
