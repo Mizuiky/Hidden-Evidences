@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class OnTrigger : MonoBehaviour
 {
-    public string name;
+    public string tagToCompare;
     private void OnTriggerEnter2D(Collider2D collision)
     {
        
@@ -10,7 +11,7 @@ public class OnTrigger : MonoBehaviour
         {
             PlayerController ply = collision.gameObject.GetComponent<PlayerController>();
             if (ply != null)
-                SceneManager.LoadScene(name);
+                SceneManager.LoadScene(tagToCompare);
 
         }
     }

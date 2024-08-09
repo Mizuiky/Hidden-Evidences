@@ -114,9 +114,9 @@ public class DialogWritter : ScriptableObject
         _currentNode = _dialogLoader.DialogNodes[startNode];
 
         if (_currentCoroutine != null)
-            Core.Instance.StopCoroutine(_currentCoroutine);
+            CoreManager.Instance.StopCoroutine(_currentCoroutine);
 
-        _currentCoroutine = Core.Instance.StartCoroutine(WriteCoroutine());
+        _currentCoroutine = CoreManager.Instance.StartCoroutine(WriteCoroutine());
     }
 
     private IEnumerator WriteCoroutine()
@@ -236,7 +236,7 @@ public class DialogWritter : ScriptableObject
         _dialogIndex = 0;
         _isWriting = false;
 
-        Core.Instance.StopRoutine(WriteCoroutine());
+        CoreManager.Instance.StopRoutine(WriteCoroutine());
         endDialogEvent.Invoke();
     }
 
