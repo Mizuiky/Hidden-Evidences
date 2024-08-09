@@ -1,0 +1,463 @@
+{
+    "nodes":[
+        {
+            "nodeId" : 0,
+            "nextNode": 1,
+            "normalDialogs": [
+                {
+                    "dialog":"surprised_agatha",
+                    "nodePortrait":"agatha"                 
+                },
+                {
+                    "dialog":"dream_goddess",
+                    "nodePortrait":"helix"                   
+                },
+                {
+                    "dialog":"why_agatha",
+                    "nodePortrait":"agatha"                
+                }
+                ,
+                {
+                    "dialog":"why_agatha2",
+                    "nodePortrait":"agatha"                   
+                },
+                {
+                    "dialog":"goddess_answer1",
+                    "nodePortrait":"helix"                   
+                },
+                {
+                    "dialog":"goddess_answer2",
+                    "nodePortrait":"helix"                   
+                },
+                {
+                    "dialog":"how_agatha",
+                    "nodePortrait":"agatha"                   
+                }                      
+            ],
+            "answers":[         
+            ]
+        },   
+        {
+            "nodeId" : 1,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"how_agatha2",
+                    "nodePortrait":"agatha"                 
+                }          
+            ],
+            "answers":[
+                {
+                    "answer": "choice_one",
+                    "nodeLinkID": 2
+                },
+                {
+                    "answer": "choice_two",
+                    "nodeLinkID": 3
+                },
+                {
+                    "answer": "choice_three",
+                    "nodeLinkID": 4
+                }
+            ]
+        },
+        {
+            "nodeId" : 2,
+            "nextNode": 1,
+            "normalDialogs": [
+                {
+                    "dialog":"goddess_power",
+                    "nodePortrait":"helix"                 
+                },
+                {
+                    "dialog":"confused_agatha",
+                    "nodePortrait":"agatha"                 
+                },
+                {
+                    "dialog":"maybe_goddess",
+                    "nodePortrait":"helix"                 
+                },
+                {
+                    "dialog":"maybe_goddess2",
+                    "nodePortrait":"agatha"                 
+                }
+            ],
+            "answers":[             
+            ]
+        },
+        {
+            "nodeId" : 3,
+            "nextNode": 1,
+            "normalDialogs": [
+                {
+                    "dialog":"goddess_cave",
+                    "nodePortrait":"helix"                 
+                },
+                {
+                    "dialog":"goddess_cave2",
+                    "nodePortrait":"helix"                 
+                },
+                {
+                    "dialog":"goddess_cave3",
+                    "nodePortrait":"helix"                 
+                },
+                {
+                    "dialog":"fight_agatha",
+                    "nodePortrait":"agatha"                 
+                },
+                {
+                    "dialog":"goddess_book",
+                    "nodePortrait":"helix"                 
+                },
+                {
+                    "dialog":"goddess_book2",
+                    "nodePortrait":"helix"                 
+                }
+            ],
+            "answers":[              
+            ]
+        },
+        {
+            "nodeId" : 4,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"determined_agatha",
+                    "nodePortrait":"agatha"                 
+                },
+                {
+                    "dialog":"determined_agatha2",
+                    "nodePortrait":"agatha"                 
+                }
+            ],
+            "answers":[               
+            ]
+        },
+        {
+            "nodeId" : 5,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"holy_text",
+                    "nodePortrait":"noPortrait"                 
+                }
+            ],
+            "answers":[               
+            ]            
+        },
+        {
+            "nodeId" : 6,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"sleeping_cat1",
+                    "nodePortrait":"cat"                 
+                },
+                {
+                    "dialog":"sleeping_cat2",
+                    "nodePortrait":"cat"                 
+                },
+                {
+                    "dialog":"sleeping_cat3",
+                    "nodePortrait":"cat"                 
+                },
+                {
+                    "dialog":"sleeping_cat4",
+                    "nodePortrait":"cat"                 
+                },
+                {
+                    "dialog":"sleeping_cat5",
+                    "nodePortrait":"cat"                 
+                }
+            ],
+            "answers":[               
+            ]
+        },
+        {
+            "nodeId" : 7,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"writing_desk",
+                    "nodePortrait":"noPortrait"                 
+                }          
+            ],
+            "answers":[               
+            ]
+        },
+        {
+            "nodeId" : 8,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"fire_pit",
+                    "nodePortrait":"noPortrait"                 
+                },
+                {
+                    "dialog":"fire_pit2",
+                    "nodePortrait":"noPortrait"                 
+                },
+                {
+                    "dialog":"fire_pit3",
+                    "nodePortrait":"noPortrait"                 
+                }
+            ],
+            "answers":[               
+            ]
+        },
+        {
+            "nodeId" : 9,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"goddess_idol",
+                    "nodePortrait":"noPortrait"                 
+                },
+                {
+                    "dialog":"goddess_idol2",
+                    "nodePortrait":"noPortrait"                 
+                },
+                {
+                    "dialog":"goddess_idol3",
+                    "nodePortrait":"noPortrait"                 
+                },
+                {
+                    "dialog":"goddess_idol4",
+                    "nodePortrait":"noPortrait"                 
+                },
+                {
+                    "dialog":"goddess_idol5",
+                    "nodePortrait":"noPortrait"                 
+                },
+                {
+                    "dialog":"goddess_idol6",
+                    "nodePortrait":"noPortrait"                 
+                },
+                {
+                    "dialog":"goddess_idol7",
+                    "nodePortrait":"noPortrait"                 
+                },
+                {
+                    "dialog":"goddess_idol8",
+                    "nodePortrait":"noPortrait"                 
+                },
+                {
+                    "dialog":"goddess_idol9",
+                    "nodePortrait":"noPortrait"                 
+                }
+            ],
+            "answers":[     
+            ]
+        }
+        ,
+        {
+            "nodeId" : 10,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"magic_book",
+                    "nodePortrait":"noPortrait"                 
+                },
+                {
+                    "dialog":"magic_book2",
+                    "nodePortrait":"noPortrait"                 
+                },
+                {
+                    "dialog":"magic_book3",
+                    "nodePortrait":"noPortrait"                 
+                },
+                {
+                    "dialog":"magic_book4",
+                    "nodePortrait":"noPortrait"                 
+                },
+                {
+                    "dialog":"magic_book5",
+                    "nodePortrait":"noPortrait"                 
+                },
+                {
+                    "dialog":"magic_book6",
+                    "nodePortrait":"noPortrait"                 
+                }
+            ],
+            "answers":[         
+            ]
+        },
+        {
+            "nodeId" : 11,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"healing_tears",
+                    "nodePortrait":"noPortrait"                 
+                }           
+            ],
+            "answers":[         
+            ]
+        },
+        {
+            "nodeId" : 12,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"boss_death",
+                    "nodePortrait":"noPortrait"                 
+                }
+            ],
+            "answers":[         
+            ]
+        },
+        {
+            "nodeId" : 13,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"player_death",
+                    "nodePortrait":"noPortrait"                 
+                }
+            ],
+            "answers":[         
+            ]
+        },
+        {
+            "nodeId" : 14,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"after_match3",
+                    "nodePortrait":"noPortrait"                 
+                }
+            ],
+            "answers":[         
+            ]
+        },
+        {
+            "nodeId" : 15,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"ashes_ashes",
+                    "nodePortrait":"noPortrait"                 
+                }
+            ],
+            "answers":[         
+            ]
+        },
+        {
+            "nodeId" : 16,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"before_boss",
+                    "nodePortrait":"furia"                 
+                },
+                {
+                    "dialog":"before_boss2",
+                    "nodePortrait":"furia"                 
+                },
+                {
+                    "dialog":"before_boss3",
+                    "nodePortrait":"furia"                 
+                },
+                {
+                    "dialog":"agatha_answer",
+                    "nodePortrait":"agatha"                 
+                },
+                {
+                    "dialog":"agatha_answer2",
+                    "nodePortrait":"agatha"                 
+                },
+                {
+                    "dialog":"before_boss4",
+                    "nodePortrait":"furia"                 
+                },
+                {
+                    "dialog":"before_boss5",
+                    "nodePortrait":"furia"                 
+                },
+                {
+                    "dialog":"before_boss6",
+                    "nodePortrait":"furia"                 
+                },
+                {
+                    "dialog":"before_boss7",
+                    "nodePortrait":"furia"                 
+                },
+                {
+                    "dialog":"before_boss8",
+                    "nodePortrait":"furia"                 
+                }
+            ],
+            "answers":[         
+            ]
+        },
+        {
+            "nodeId" : 17,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"angry_erinye",
+                    "nodePortrait":"furia"                 
+                },
+                {
+                    "dialog":"angry_erinye2",
+                    "nodePortrait":"furia"                 
+                },
+                {
+                    "dialog":"angry_erinye3",
+                    "nodePortrait":"furia"                 
+                },
+                {
+                    "dialog":"angry_erinye4",
+                    "nodePortrait":"furia"                 
+                }
+            ],
+            "answers":[         
+            ]
+        },
+        {
+            "nodeId" : 18,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"wise_elder",
+                    "nodePortrait":"elder"                 
+                },
+                {
+                    "dialog":"sad_agatha",
+                    "nodePortrait":"agatha"                 
+                },
+                {
+                    "dialog":"sad_agatha2",
+                    "nodePortrait":"agatha"                 
+                },
+                {
+                    "dialog":"sad_agatha3",
+                    "nodePortrait":"agatha"                 
+                },
+                {
+                    "dialog":"sad_agatha4",
+                    "nodePortrait":"agatha"                 
+                },
+                {
+                    "dialog":"consoling_elder",
+                    "nodePortrait":"elder"                 
+                },
+                {
+                    "dialog":"consoling_elde2",
+                    "nodePortrait":"elder"                 
+                },
+                {
+                    "dialog":"consoling_elder3",
+                    "nodePortrait":"elder"                 
+                },
+                {
+                    "dialog":"consoling_elder4",
+                    "nodePortrait":"elder"                 
+                }
+            ],
+            "answers":[         
+            ]
+        }
+    ]
+}
+

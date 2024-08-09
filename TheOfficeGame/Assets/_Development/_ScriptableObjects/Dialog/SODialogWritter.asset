@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb106a414e2318b4ea8441f93b39659d, type: 3}
+  m_Name: SODialogWritter
+  m_EditorClassIdentifier: 
+  _dialogLoader: {fileID: 11400000, guid: b5913f921459e66439d35e2ed6797cab, type: 2}
+  _localizationHandler: {fileID: 11400000, guid: ef253059d1434b7489366ced9a584179, type: 2}
+  _dialogText: {fileID: 11400000, guid: 479d1ef213520e441a00c1d57a519e4e, type: 2}
+  _dialogName: {fileID: 11400000, guid: 3a5495a768b91ac408bf9f69e4cc5d35, type: 2}
+  _timeBetweenLetters: 0.05
+  _defaultPortrait: {fileID: 0}

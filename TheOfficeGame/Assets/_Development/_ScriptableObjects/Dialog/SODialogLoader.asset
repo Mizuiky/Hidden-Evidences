@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 952d66ff9ccb0ce44b596d91ac6c9021, type: 3}
+  m_Name: SODialogLoader
+  m_EditorClassIdentifier: 
+  _dialogFile: {fileID: 4900000, guid: 3515859c7764db84f86311bef2bd7f25, type: 3}
+  dialogPortraits:
+  - {fileID: 21300000, guid: e35d43e82437c1c4f9116417224ead0e, type: 3}
+  - {fileID: 21300000, guid: f53d0ae9a2e572e4480aa55ad4b13127, type: 3}
