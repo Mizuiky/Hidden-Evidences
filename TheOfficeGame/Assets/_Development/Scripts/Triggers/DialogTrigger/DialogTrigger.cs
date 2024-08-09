@@ -21,15 +21,12 @@ public class DialogTrigger : MonoBehaviour, IDialogTrigger
 
     public virtual void OnStartDialog()
     {
-        Debug.Log("OnStartDialog");
-
         if (_dialogRoot != -1)
         {
-            Debug.Log("Dialog != -1");
+            //Debug.Log("Dialog != -1");
 
             if (hasDialogFinished)
             {
-                Debug.Log("Started dialog");
                 hasDialogFinished = false;
                 _writter.StartDialog(_dialogRoot);                 
             }

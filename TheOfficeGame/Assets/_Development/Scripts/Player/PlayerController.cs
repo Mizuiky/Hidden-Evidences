@@ -52,14 +52,9 @@ public class PlayerController : MonoBehaviour, IPlayer
 
         if (count > 0)
         {
-            Debug.Log("Try to interact");
-
             IDialogTrigger dialog = _results[0].gameObject.GetComponent<IDialogTrigger>();
             if (dialog != null)
-            {
-                Debug.Log("OnStartDialog");
                 dialog.OnStartDialog();
-            }
         }
     }
 
