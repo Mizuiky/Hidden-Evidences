@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Development/Scenes/Reception.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/_Development/Scenes/Office.unity
+    guid: 285ae2c735fb7b94c91d565f29c1e9e2
   m_configObjects: {}

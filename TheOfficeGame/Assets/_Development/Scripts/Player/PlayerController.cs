@@ -54,7 +54,14 @@ public class PlayerController : MonoBehaviour, IPlayer
         {
             IDialogTrigger dialog = _results[0].gameObject.GetComponent<IDialogTrigger>();
             if (dialog != null)
+            {
                 dialog.OnStartDialog();
+                return;
+            }
+                
+            InteractableBase interactable = _results[0].gameObject.GetComponent<InteractableBase>();
+            if (interactable != null)
+                interactable.Interact();
         }
     }
 

@@ -3,16 +3,16 @@ using UnityEngine.SceneManagement;
 
 public class OnTrigger : MonoBehaviour
 {
-    public string tagToCompare;
+    public int sceneIndex;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       
-        if(collision.CompareTag("Player"))
-        {
-            PlayerController ply = collision.gameObject.GetComponent<PlayerController>();
-            if (ply != null)
-                SceneManager.LoadScene(tagToCompare);
+        if (collision.gameObject.CompareTag("Player"))
+            Invoke("LoadSceneById", 0.05f);
+    }
 
-        }
+    private void LoadSceneById()
+    {     
+        SceneManager.LoadSceneAsync(sceneIndex);
     }
 }

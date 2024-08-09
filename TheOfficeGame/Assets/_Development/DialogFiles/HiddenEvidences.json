@@ -80,7 +80,175 @@
             ],
             "answers":[
             ]
-        }      
+        },
+        {
+            "nodeId" : 3,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"receptionist_picture",
+                    "nodePortrait":"none"                 
+                }               
+            ],
+            "answers":[
+            ]
+        },
+        {
+            "nodeId" : 4,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"ticket_door",
+                    "nodePortrait":"none"                 
+                }               
+            ],
+            "answers":[
+            ]
+        },
+        {
+            "nodeId" : 5,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"drinking_fountain1",
+                    "nodePortrait":"none"                 
+                }               
+            ],
+            "answers":[
+            ]
+        },
+        {
+            "nodeId" : 6,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"elevator",
+                    "nodePortrait":"none"                 
+                }               
+            ],
+            "answers":[
+            ]
+        },
+        {
+            "nodeId" : 7,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"contability_table",
+                    "nodePortrait":"none"                 
+                }               
+            ],
+            "answers":[
+            ]
+        },
+        {
+            "nodeId" : 8,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"drinking_fountain2",
+                    "nodePortrait":"none"                 
+                }               
+            ],
+            "answers":[
+            ]
+        },
+        {
+            "nodeId" : 9,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"trash",
+                    "nodePortrait":"none"                 
+                }               
+            ],
+            "answers":[
+            ]
+        },
+        {
+            "nodeId" : 10,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"printer",
+                    "nodePortrait":"none"                 
+                }               
+            ],
+            "answers":[
+            ]
+        },
+        {
+            "nodeId" : 11,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"board",
+                    "nodePortrait":"none"                 
+                }               
+            ],
+            "answers":[
+            ]
+        },
+        {
+            "nodeId" : 12,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"thiago_table",
+                    "nodePortrait":"none"                 
+                }               
+            ],
+            "answers":[
+            ]
+        },
+        {
+            "nodeId" : 13,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"best_pc",
+                    "nodePortrait":"none"                 
+                }               
+            ],
+            "answers":[
+            ]
+        },
+        {
+            "nodeId" : 14,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"fire",
+                    "nodePortrait":"none"                 
+                }               
+            ],
+            "answers":[
+            ]
+        },
+        {
+            "nodeId" : 15,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"big_picture",
+                    "nodePortrait":"none"                 
+                }               
+            ],
+            "answers":[
+            ]
+        },
+        {
+            "nodeId" : 16,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"warnings",
+                    "nodePortrait":"none"                 
+                }               
+            ],
+            "answers":[
+            ]
+        }
     ]
 }
 
