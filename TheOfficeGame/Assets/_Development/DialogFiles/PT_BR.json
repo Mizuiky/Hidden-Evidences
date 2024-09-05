@@ -26,5 +26,19 @@
         "best_pc" : "É um computador melhor que o meu, inveja",
         "fire" : "Se aqui tivesse pegando fogo, eu esquecia onde tá você",
         "big_picture" : "Nada útil na sala inteira",
-        "warnings" : "Isso tá aí ainda? Ninguém segue esses avisos"
+        "warnings" : "Isso tá aí ainda? Ninguém segue esses avisos",
+        "Jin_Talk1" : "Thiago, descobri uma coisa ontem depois que você me pediu ajuda.",
+        "Thiago_Talk1" : "O quê?",
+        "Jin_Talk2" : "Precisamos da senha da sala de segurança para ver as câmeras, e tá aqui no TI, porém preciso do acesso de admin.",
+        "Thiago_Talk2" : "E como vamos conseguir esse trem?",
+        "Jin_Talk3" : "A senha de admin tá lááááá no almoxarifado.",
+        "Thiago_Talk3": "Ótimo, então cê já pegou.",
+        "Jin_Talk4": "Não, tá uma bagunça, eu tentei passar e não deu certo… ",
+        "silence": "...",
+        "Jin_Talk5": "M-mas cê sabe mexer com empilhadeira, né?",
+        "Jin_Talk6": "Lembro que o chefe te contratou por causa disso, já que não queria pagar extra na época pra alguém mexer com ela",
+        "Jin_Talk7": " Pega a senha e traz pra mim.",
+        "Thiago_Talk4": "...",
+        "Thiago_Talk5": "Tá bom, vou ver o que posso fazer.",
+        "Jin_Talk8": " Beleza, estou te aguardando."
     }

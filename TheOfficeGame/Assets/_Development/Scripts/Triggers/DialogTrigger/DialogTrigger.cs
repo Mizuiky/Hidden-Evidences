@@ -14,9 +14,18 @@ public class DialogTrigger : MonoBehaviour, IDialogTrigger
     public bool HasDialogFinished {  get { return hasDialogFinished; } }
 
     private int rootCount = 0;
+    private int root;
+
+    public void OnEnable()
+    {
+        root = _dialogRoot;
+        _dialogRoot = root;
+    }
+
     public void Start()
     {
         _writter.endDialogEvent.AddListener(OnEndDialog);
+        root = _dialogRoot;
     }
 
     public virtual void OnStartDialog()

@@ -6,24 +6,24 @@
             "normalDialogs": [
                 {
                     "dialog":"reception_message1",
-                    "nodePortrait":"none"                 
+                    "nodePortrait":"Pamela"                 
                 },
                 {
                     "dialog":"reception_message2",
-                    "nodePortrait":"none"                   
+                    "nodePortrait":"Pamela"                   
                 },
                 {
                     "dialog":"receptionist_unconformed1",
-                    "nodePortrait":"none"                
+                    "nodePortrait":"Pamela"                
                 }
                 ,
                 {
                     "dialog":"receptionist_unconformed2",
-                    "nodePortrait":"none"                   
+                    "nodePortrait":"Pamela"                   
                 },
                 {
                     "dialog":"receptionist_unconformed3",
-                    "nodePortrait":"none"                   
+                    "nodePortrait":"Pamela"                   
                 }                     
             ],
             "answers":[  
@@ -39,11 +39,11 @@
             "normalDialogs": [
                 {
                     "dialog":"no_gossip1",
-                    "nodePortrait":"none"                 
+                    "nodePortrait":"Pamela"                 
                 },
                 {
                     "dialog":"no_gossip2",
-                    "nodePortrait":"none"                 
+                    "nodePortrait":"Pamela"                 
                 }                  
             ],
             "answers":[
@@ -55,27 +55,27 @@
             "normalDialogs": [
                 {
                     "dialog":"jin_message1",
-                    "nodePortrait":"none"                 
+                    "nodePortrait":"Jin"                 
                 },
                 {
                     "dialog":"jin_message2",
-                    "nodePortrait":"none"                 
+                    "nodePortrait":"Jin"                 
                 }, 
                 {
                     "dialog":"jin_message3",
-                    "nodePortrait":"none"                 
+                    "nodePortrait":"Jin"                 
                 },
                 {
                     "dialog":"jin_message4",
-                    "nodePortrait":"none"                 
+                    "nodePortrait":"Jin"                 
                 },
                 {
                     "dialog":"jin_message5",
-                    "nodePortrait":"none"                 
+                    "nodePortrait":"Jin"                 
                 },
                 {
                     "dialog":"jin_message6",
-                    "nodePortrait":"none"                 
+                    "nodePortrait":"Jin"                 
                 }  
             ],
             "answers":[
@@ -247,6 +247,103 @@
                 }               
             ],
             "answers":[
+            ]
+        },
+        {
+            "nodeId" : 17,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"Jin_Talk1",
+                    "nodePortrait":"Jin"                 
+                }               
+            ],
+            "answers":[  
+                {
+                    "answer": "Thiago_Talk1",
+                    "nodeLinkID": 18
+                }       
+            ]
+        },
+        {
+            "nodeId" : 18,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"Jin_Talk2",
+                    "nodePortrait":"Jin"                 
+                }               
+            ],
+            "answers":[  
+                {
+                    "answer": "Thiago_Talk2",
+                    "nodeLinkID": 19
+                }       
+            ]
+        },
+        {
+            "nodeId" : 19,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"Jin_Talk3",
+                    "nodePortrait":"Jin"                 
+                }               
+            ],
+            "answers":[  
+                {
+                    "answer": "Thiago_Talk3",
+                    "nodeLinkID": 20
+                }       
+            ]
+        },
+        {
+            "nodeId" : 20,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"Jin_Talk4",
+                    "nodePortrait":"Jin"                 
+                },
+                {
+                    "dialog":"silence",
+                    "nodePortrait":"Thiago"                 
+                },
+                {
+                    "dialog":"Jin_Talk5",
+                    "nodePortrait":"Jin"                 
+                },
+                {
+                    "dialog":"Jin_Talk6",
+                    "nodePortrait":"Jin"                 
+                },
+                {
+                    "dialog":"Jin_Talk7",
+                    "nodePortrait":"Jin"                 
+                }
+                             
+            ],
+            "answers":[  
+                {
+                    "answer": "Thiago_Talk4",
+                    "nodeLinkID": 21
+                }       
+            ]
+        },
+        {
+            "nodeId" : 21,
+            "nextNode": 0,
+            "normalDialogs": [
+                {
+                    "dialog":"Thiago_Talk5",
+                    "nodePortrait":"Thiago"                 
+                },
+                {
+                    "dialog":"Jin_Talk8",
+                    "nodePortrait":"Jin"                 
+                }             
+            ],
+            "answers":[       
             ]
         }
     ]

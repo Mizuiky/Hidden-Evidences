@@ -35,18 +35,21 @@ public class MovementControler : MonoBehaviour
         if (movement != Vector2.zero)
         {
             _animation.SetWalk(movement.x, movement.y);
-            _rb.MovePosition(_rb.position + movement * _speedMultiplier * Time.deltaTime);       
-            //Rotate(movement);
+            
+            // Move o personagem
+            Vector2 newPosition = _rb.position + movement * _speedMultiplier * Time.deltaTime;
+            _rb.MovePosition(newPosition);
         }
 
-        _animation.SetLastWalk(movement.x, movement.y);
+        // Se não houver movimento, atualiza para a última direção de movimento
+        _animation.SetLastWalk(movement.x, movement.y);    
     }
 
-    private void Rotate(Vector3 movement)
-    {
-        _angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(new Vector3(0, 0, _angle));
-    }
+    //private void Rotate(Vector3 movement)
+    //{
+    //    _angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg;
+    //    transform.rotation = Quaternion.Euler(new Vector3(0, 0, _angle));
+    //}
 
     public void ChangeSpeed(speedType speedType)
     {
